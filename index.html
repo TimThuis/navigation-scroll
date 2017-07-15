@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <div class='nav'>
+        <ul>
+          <li data-value='one' class="btn" onclick='moveTo(event)'>one</li>
+          <li data-value='two' class="btn" onclick='moveTo(event)'>two</li>
+          <li data-value='tree' class="btn" onclick='moveTo(event)'>tree</li>
+        </ul>
+      </div>
+      <div class="container-pages">
+        <div data-value='one' class="page" id="one"></div>
+        <div data-value='two' class="page" id="two"></div>
+        <div data-value='tree' class="page" id="tree"></div>
+      </div>
+      <div class='timeline-container'>
+        <div class='tl active-tl' onmousemove='scrollTl(event)'></div>
+        <div class='tl range-tl' onmousemove='scrollTl(event)'></div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="./js/main.js"></script>
+</html>
